@@ -6,7 +6,6 @@ $config = array (
 		'validate_ssl' => false 
 );
 $AFASintegration = new AFASintegration ( $_REQUEST, $config );
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,17 +48,31 @@ $AFASintegration = new AFASintegration ( $_REQUEST, $config );
 		</div>
 
 		<div class="AfasPageIntroContainer">
-			<p class="AfasPageIntro">Lorem ipsum dolor sit amet, consectetur
-				adipiscing elit. Suspendisse felis. Pellentesque habitant morbi
-				tristique senectus et netus et malesuada fames ac turpis egestas.
-				Nullam nec magna eu tellus placerat tempus. Suspendisse pharetra.
-				Phasellus a ligula eu neque mattis vestibulum. Cras gravida metus id
-				nulla. Nulla dictum. Mauris cursus scelerisque dui. Donec aliquet,
-				dui eget bibendum consectetur, velit urna suscipit dui, nec viverra
-				dui sem vel lorem. Integer massa ligula, tristique et, elementum
-				vitae, interdum quis, felis. Proin erat. Phasellus fringilla blandit
-				libero. Sed in neque. Praesent semper neque sed nulla. Sed tellus
-				nibh, tincidunt pulvinar, feugiat eu, tempus quis, urna.</p>
+			<p class="AfasPageIntro">
+				This page demonstrates the integration between AFAS InSite and your
+				PHP installation. In the source of this PHP file you can experience
+				the ease of the integration with the PHP class file <em>class.afasintegration.php</em>.
+			</p>
+		</div>
+
+		<h2 class="AfasParagraphHeader1">PHP source</h2>
+		<div class="row">
+			<div class="col-md-3">
+				<p>The code on the right is the only source could you will need to
+					make the integration possible.</p>
+			</div>
+			<div class="col-md-9">
+				<pre>
+&lt;?php
+include_once ('class.afasintegration.php');
+$config = array (
+	'public_key' => 'YOUR_PUBLIC_KEY_HERE',
+	'private_key' => 'YOUR_PRIVATE_KEY_HERE',
+	'validate_ssl' => false 
+);
+$AFASintegration = new AFASintegration ( $_REQUEST, $config );
+?></pre>
+			</div>
 		</div>
 
 		<h2 class="AfasParagraphHeader1">Request</h2>
