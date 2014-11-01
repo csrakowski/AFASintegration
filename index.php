@@ -1,10 +1,14 @@
 <?php
+// Include the PHP class file
 include_once ('class.afasintegration.php');
+// Prepare the configuration variable
 $config = array (
 		'public_key' => 'YOUR_PUBLIC_KEY_HERE',
 		'private_key' => 'YOUR_PRIVATE_KEY_HERE',
-		'validate_ssl' => false 
+		'validate_ssl' => false,
+		'debug' => true 
 );
+// Instantiate the PHP class file
 $AFASintegration = new AFASintegration ( $_REQUEST, $config );
 ?>
 <!DOCTYPE html>
@@ -21,14 +25,18 @@ $AFASintegration = new AFASintegration ( $_REQUEST, $config );
 <link
 	href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
 	rel="stylesheet" />
+<?php if (isset($AFASintegration->data['data']['cssUrl'])):?>
 <link href="<?php echo $AFASintegration->data['data']['cssUrl']?>"
 	rel="stylesheet" />
+<?php endif?>
 
 
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<?php if (isset($AFASintegration->data['data']['scriptUrl'])):?>
 <script src="<?php echo $AFASintegration->data['data']['scriptUrl']?>"></script>
+<?php endif?>
 
 <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -50,8 +58,9 @@ $AFASintegration = new AFASintegration ( $_REQUEST, $config );
 		<div class="AfasPageIntroContainer">
 			<p class="AfasPageIntro">
 				This page demonstrates the integration between AFAS InSite and your
-				PHP installation. In the source of this PHP file you can experience
-				the ease of the integration with the PHP class file <em>class.afasintegration.php</em>.
+				PHP installation. In the source of this PHP file <em>index.php</em>
+				you can experience the ease of the integration with the PHP class
+				file <em>class.afasintegration.php</em>.
 			</p>
 		</div>
 
@@ -59,7 +68,20 @@ $AFASintegration = new AFASintegration ( $_REQUEST, $config );
 		<div class="row">
 			<div class="col-md-3">
 				<p>The code on the right is the only source could you will need to
-					make the integration possible.</p>
+					make the integration possible. These are your configuration
+					parameters:</p>
+				<ul>
+					<li><strong>public_key</strong><br />The public key has been
+						provided by AFAS Profit and allows you to know which integration
+						page has requested your script.</li>
+					<li><strong>private_key</strong><br />The private key has been
+						provided by AFAS Profit and allows you to verify that you are
+						allowed to use the integration.</li>
+					<li><strong>validate_ssl</strong><br />Whether or not you wish to
+						validate the SSL certificate of the InSite URL.</li>
+					<li><strong>debug</strong><br />Whether or not you wish to include
+						performance indicators in the data variable of the PHP class.</li>
+				</ul>
 			</div>
 			<div class="col-md-9">
 				<pre>
@@ -68,7 +90,8 @@ include_once ('class.afasintegration.php');
 $config = array (
 	'public_key' => 'YOUR_PUBLIC_KEY_HERE',
 	'private_key' => 'YOUR_PRIVATE_KEY_HERE',
-	'validate_ssl' => false 
+	'validate_ssl' => false,
+	'debug' => true 
 );
 $AFASintegration = new AFASintegration ( $_REQUEST, $config );
 ?></pre>
