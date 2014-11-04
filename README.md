@@ -2,6 +2,18 @@
 
 This PHP class file enables you to quickly make an integration page with an AFAS InSite intranet website. By calling the PHP class and including the public and private key of the integration page, you can retrieve information about the user's session in the AFAS InSite website.
 
+<h2>Creating a new integration page</h2>
+<p>Follow the hyperlinks below in order to create the new integration page in AFAS Profit:</p>
+<ul>
+<li><strong>English</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_5/SE/EN/index.htm#Ins_Config_Site_iFrame_1.htm" title="Configure the display of external content in an iFrame in InSite and OutSite">Configure the display of external content in an iFrame in InSite and OutSite</a></li>
+<li><strong>Dutch</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_5/SE/NL/index.htm#Ins_Config_Site_iFrame_1.htm" title="Externe content in InSite en OutSite tonen in een iFrame inrichten">Externe content in InSite en OutSite tonen in een iFrame inrichten</a></li>
+<li><strong>French</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_5/SE/FR/index.htm#Ins_Config_Site_iFrame_1.htm" title="Configuration de l'affichage du contenu externe InSite et OutSite dans iFrame">Configuration de l'affichage du contenu externe InSite et OutSite dans iFrame</a></li>
+</ul>
+
+<h2>Technical documentation</h2>
+<p>The AFAS KnowledgeBase includes detailed documentation on how to integrate external pages through an iFrame with AFAS InSite:</p>
+<a href="http://profitdownload.afas.nl/download/help_docs/Partner_documentatie_integratie-pagina's_InSite_en_OutSite.pdf" title="Technical documentation AFAS InSite integration page">http://profitdownload.afas.nl/download/help_docs/Partner_documentatie_integratie-pagina's_InSite_en_OutSite.pdf</a>
+
 <h2>Usage</h2>
 Use the following PHP source code to call and activate the PHP class.
 ```HTML+PHP
