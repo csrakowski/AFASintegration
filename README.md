@@ -12,7 +12,7 @@ This PHP class file enables you to quickly make an integration page with an AFAS
 
 <h2>Technical documentation</h2>
 <p>The AFAS KnowledgeBase includes detailed documentation on how to integrate external pages through an iFrame with AFAS InSite:</p>
-<a href="http://profitdownload.afas.nl/download/help_docs/Partner_documentatie_integratie-pagina's_InSite_en_OutSite.pdf" title="Technical documentation AFAS InSite integration page">http://profitdownload.afas.nl/download/help_docs/Partner_documentatie_integratie-pagina's_InSite_en_OutSite.pdf</a>
+<a href="http://profitdownload.afas.nl/download/help_docs/Partner_documentatie_integratie-pagina's_InSite_en_OutSite.pdf" title="Externe pagina's integreren in InSite en OutSite">Externe pagina's integreren in InSite en OutSite</a>
 
 <h2>Usage</h2>
 Use the following PHP source code to call and activate the PHP class.
