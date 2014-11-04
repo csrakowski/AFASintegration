@@ -23,3 +23,62 @@ After you have successfully called the PHP class including a valid public and pr
 ```HTML+PHP
 <?php var_dump($AFASintegration->data)?>
 ```
+
+<h2>Variables</h2>
+<h3>PHP source</h3>
+<ul>
+	<li><strong>public_key</strong><br>The public key has been
+		provided by AFAS Profit and allows you to know which integration
+		page has requested your script.</li>
+	<li><strong>private_key</strong><br>The private key has been
+		provided by AFAS Profit and allows you to verify that you are
+		allowed to use the integration.</li>
+	<li><strong>validate_ssl</strong><br>Whether or not you wish to
+		validate the SSL certificate of the InSite URL.</li>
+	<li><strong>debug</strong><br>Whether or not you wish to include
+		performance indicators in the data variable of the PHP class.</li>
+</ul>
+<h3>Request</h3>
+<ul>
+	<li><strong>dataurl</strong><br>Alternate url to be used for an
+		integration without public and private keys.</li>
+	<li><strong>tokenurl</strong><br>The url to which we will be
+		making a postback to confirm the originating InSite page that we
+		have a valid private key in order to receive the integrated
+		details.</li>
+	<li><strong>code</strong><br>The originating InSite expects this
+		unique code in the postback for verification and identification
+		purposes.</li>
+	<li><strong>publickey</strong><br>The public key has been
+		provided by AFAS Profit and allows you to know which integration
+		page has requested your script.</li>
+	<li><strong>sessionid</strong><br>This session id originates from
+		the actual InSite session of the user, and allows you to make sure
+		that you are still dealing with the same InSite user throughout
+		requests.</li>
+</ul>
+<h3>Result</h3>
+<ul>
+	<li><strong>environmentId</strong><br>The identifier of the AFAS
+		Profit environment in which the InSite is hosted.</li>
+	<li><strong>sessionId</strong><br>This session id originates from
+		the actual InSite session of the user, and allows you to make sure
+		that you are still dealing with the same InSite user throughout
+		requests.</li>
+	<li><strong>userId</strong><br>The username of the user which is
+		logged in at InSite.</li>
+	<li><strong>personCode</strong><br>The code of the registered
+		person in AFAS Profit.</li>
+	<li><strong>contactId</strong><br>The code of the registered
+		contact in AFAS Profit.</li>
+	<li><strong>organizationCode</strong><br>The code of the
+		registered organization in AFAS Profit.</li>
+	<li><strong>employeeId</strong><br>The code of the registered
+		employee in AFAS Profit.</li>
+	<li><strong>cssUrl</strong><br>Use the CSS-resource at this
+		address to give your integrated page the same appearance as the
+		originating InSite website.</li>
+	<li><strong>scriptUrl</strong><br>Use the JavaScript-resource at
+		this address to provide a complete integrated experience and allow
+		for sizing-functionality.</li>
+</ul>
