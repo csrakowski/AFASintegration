@@ -1,4 +1,4 @@
-<h1>AFAS integration page class</h1>
+<h1>AFAS InSite integration page class</h1>
 
 This PHP class file enables you to quickly make an integration page with an AFAS InSite intranet website. By calling the PHP class and including the public and private key of the integration page, you can retrieve information about the user's session in the AFAS InSite website.
 
