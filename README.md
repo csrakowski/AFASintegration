@@ -5,9 +5,9 @@ This PHP class file enables you to quickly make an integration page with an AFAS
 <h2>Creating a new integration page</h2>
 <p>Follow the hyperlinks below in order to create the new integration page in AFAS Profit:</p>
 <ul>
-<li><strong>English</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_5/SE/EN/index.htm#Ins_Config_Site_iFrame_1.htm" title="Configure the display of external content in an iFrame in InSite and OutSite">Configure the display of external content in an iFrame in InSite and OutSite</a></li>
-<li><strong>Dutch</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_5/SE/NL/index.htm#Ins_Config_Site_iFrame_1.htm" title="Externe content in InSite en OutSite tonen in een iFrame inrichten">Externe content in InSite en OutSite tonen in een iFrame inrichten</a></li>
-<li><strong>French</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_5/SE/FR/index.htm#Ins_Config_Site_iFrame_1.htm" title="Configuration de l'affichage du contenu externe InSite et OutSite dans iFrame">Configuration de l'affichage du contenu externe InSite et OutSite dans iFrame</a></li>
+<li><strong>English</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_6/SE/EN/index.htm#Ins_Config_Site_iFrame_1.htm" title="Configure the display of external content in an iFrame in InSite and OutSite">Configure the display of external content in an iFrame in InSite and OutSite</a></li>
+<li><strong>Dutch</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_6/SE/NL/index.htm#Ins_Config_Site_iFrame_1.htm" title="Externe content in InSite en OutSite tonen in een iFrame inrichten">Externe content in InSite en OutSite tonen in een iFrame inrichten</a></li>
+<li><strong>French</strong><br /><a href="https://static-kb.afas.nl/datafiles/help/2_9_6/SE/FR/index.htm#Ins_Config_Site_iFrame_1.htm" title="Configuration de l'affichage du contenu externe InSite et OutSite dans iFrame">Configuration de l'affichage du contenu externe InSite et OutSite dans iFrame</a></li>
 </ul>
 
 <h2>Technical documentation</h2>
