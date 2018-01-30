@@ -16,6 +16,7 @@ This PHP class file enables you to quickly make an integration page with an AFAS
 
 <h2>Usage</h2>
 Use the following PHP source code to call and activate the PHP class.
+
 ```HTML+PHP
 <?php
 // Include the PHP class file
@@ -31,7 +32,9 @@ $config = array (
 $AFASintegration = new AFASintegration ( $_REQUEST, $config );
 ?>
 ```
+
 After you have successfully called the PHP class including a valid public and private key combination, use the variable and code below to use the retrieved session information.
+
 ```HTML+PHP
 <?php var_dump($AFASintegration->data)?>
 ```
